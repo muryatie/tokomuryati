@@ -21,33 +21,44 @@
   <!-- End Promosi -->
 
     <!-- Navbar -->
-    <header>
-      <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
-        <div class="sm:flex sm:items-center sm:justify-between">
-          <div class="text-center sm:text-left">
-            <h1 class="text-2xl font-bold text-gray-900 sm:text-3xl">Experiment, Toko Muryati!</h1>
-    
-            <p class="mt-1.5 text-sm text-gray-500">Belanja Kebutuhan sehari -hari...</p>
-          </div>
-    
-          <div class="mt-4 flex flex-col gap-4 sm:mt-0 sm:flex-row sm:items-center">
-            <a href="cara-belanja.html"
-              class="inline-flex items-center justify-center gap-1.5 rounded-lg border border-gray-200 px-5 py-3 text-gray-500 transition hover:bg-gray-50 hover:text-gray-700 focus:outline-none focus:ring"
-              type="button"
-            >
-              <span class="text-sm font-medium"> Cara Belanja </span>
-            </a>
-    
-            <a href="https://wa.link/hf2dei"
-              class="block rounded-lg bg-indigo-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring"
-              type="button"
-            >
-              Chat Admin
-            </a>
-          </div>
+    import React from 'react';
+
+const Navbar: React.FC = () => {
+  return (
+    <nav className="bg-white shadow-md">
+      <div className="container mx-auto px-4 py-3 flex items-center justify-between">
+        <div className="text-2xl font-bold text-gray-800">
+          {/* Ganti dengan nama toko/logo */}
+          TokoMuryati
         </div>
+        <ul className="flex space-x-6">
+          <li>
+            <a href="#" className="text-gray-600 hover:text-blue-600 transition">
+              Beranda
+            </a>
+          </li>
+          <li>
+            <a href="#" className="text-gray-600 hover:text-blue-600 transition">
+              Produk
+            </a>
+          </li>
+          <li>
+            <a href="#" className="text-gray-600 hover:text-blue-600 transition">
+              Tentang
+            </a>
+          </li>
+          <li>
+            <a href="#" className="text-gray-600 hover:text-blue-600 transition">
+              Kontak
+            </a>
+          </li>
+        </ul>
       </div>
-    </header>
+    </nav>
+  );
+};
+
+export default Navbar;
     <!-- End Navbar -->
 
     <!-- Herro -->
